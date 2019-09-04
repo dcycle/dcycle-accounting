@@ -3,6 +3,12 @@ Dcycle Accounting
 
 Not software, but a system for better accounting.
 
+Resources 
+-----
+
+* [Fork or edit me on Github](https://github.com/dcycle/dcycle-accounting/tree/master)
+* [Example on Google sheets](https://docs.google.com/spreadsheets/d/1I-1wbAjrl1D0MHb6M_E54xVeqQ6x9ty_XTxHQbUWGwg/edit?usp=sharing)
+
 Whom is this project for?
 -----
 
