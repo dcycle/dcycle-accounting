@@ -78,8 +78,6 @@ Dcycle accounting data is stored in a database with different sheets.
 
 ### The "accounts" sheet
 
-
-
 **Example 1: an invoice of $100 has been issued**
 
 After this event, you will have an asset of $100 (in the form of an account payable), and revenue of $100 (albeit unrealized revenue).
@@ -100,3 +98,8 @@ We can now say that:
 **Example 2: a writeoff**
 
 Perhaps your client will now haggle with you and you'll agree to let them pay just half the invoice. Let's introduce a new account "final loss" which is an expense.
+
+### The "entries" sheet
+
+On the first date of the period, a dummy first line is added.
+
