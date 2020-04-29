@@ -364,28 +364,6 @@ Your income accounts **represent the world outside your organization**: to balan
 
 The great accounting software Ledger CLI [has some documentation with a more detailed explanation](https://www.ledger-cli.org/3.0/doc/ledger3.html#index-why-is-income-negative).
 
-
-**Example 1: an invoice of $100 has been issued**
-
-After this event, you will have an asset of $100 (in the form of an account payable), and revenue of $100 (albeit unrealized revenue).
-
-This event requires two accounts: let's call them "unrealized revenue" and "payable" (in Dcycle Accounting, you can call your accounts however you wish).
-
-The entry, therefore, will be
-
-| DATE       | DESC    | FROM               | TO      | AMOUNT |
-|------------|---------|--------------------|---------|--------|
-| YYYY-MM-DD | Invoice | unrealized revenue | payable | 100    |
-
-We can now say that:
-
-* unrealized revenue is now -100 (that is, the world is $100 poorer)
-* payable is now 100 (that is, you are $100 richer)
-
-**Example 2: a writeoff**
-
-Perhaps your client will now haggle with you and you'll agree to let them pay just half the invoice. Let's introduce a new account "final loss" which is an expense.
-
 ### The "entries" sheet
 
 On the first date of the period, a dummy first line is added.
