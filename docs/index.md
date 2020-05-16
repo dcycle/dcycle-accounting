@@ -1,10 +1,6 @@
 ---
+id: home
 ---
-Dcycle Accounting
-=====
-
-Multicurrency, double-entry accounting accouting Google Sheets starterkit.
-
 Resources
 -----
 
@@ -44,4 +40,4 @@ This is best used by organizations with reporting and auditing requirements, wit
 * Terre des jeunes Gonaïves, an independent partner of Terre des jeunes in Haiti, which tracks the depreciation of a fleet of vehicles, and a foreign-currency long-term loan.
 * If you have had success with this system and would like your organization to be listed here, [contact us via Twitter](https://twitter.com/dcycleproject), or through [our contact form](https://blog.dcycle.com/contact/).
 
-### Next page: [the principles](/principles)
+{% include navigation.html %}

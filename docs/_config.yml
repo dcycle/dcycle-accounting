@@ -1,1 +1,15 @@
 theme: jekyll-theme-tactile
+# Sections other than home
+sections:
+  - id: home
+    name: Home
+    path: /
+  - id: principles
+    name: Principles
+    path: /principles/
+  - id: getting-started
+    name: Getting Started
+    path: /getting-started/
+  - id: overview
+    name: Overview
+    path: /overview/
