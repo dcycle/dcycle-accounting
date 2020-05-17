@@ -1,0 +1,17 @@
+{% if site.sheets | size %}
+<ul>
+  <li><a href="/">Back home</a></li>
+  <li><a href="/sheets/">Back to sheets overview</a></li>
+{% for sheet in site.sheets %}
+  <li class="{{ sheet.id }}">
+    {% if page.id != sheet.id %}
+    <a href="/sheets/{{ sheet.id }}.html">
+    {% endif %}
+      <strong>{% if page.id == sheet.id %}current page: {% endif %}{{ sheet.id }} sheet</strong>: {{ sheet.description }}
+    {% if page.id != sheet.id %}
+    </a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endif %}

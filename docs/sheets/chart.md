@@ -1,11 +1,7 @@
 ---
-id: overview
+id: chart
 ---
-{% include navigation.html %}
-
-Examples and principles
------
-Let's head back to our [example spreadsheet](https://docs.google.com/spreadsheets/d/1I-1wbAjrl1D0MHb6M_E54xVeqQ6x9ty_XTxHQbUWGwg/edit#gid=0).
+{% include sheets.html %}
 
 ### The "chart" sheet
 
@@ -59,8 +55,4 @@ Your income accounts **represent the world outside your organization**: to balan
 
 The great accounting software Ledger CLI [has some documentation with a more detailed explanation](https://www.ledger-cli.org/3.0/doc/ledger3.html#index-why-is-income-negative).
 
-### The "entries" sheet
-
-On the first date of the period, a dummy first line is added.
-
-{% include navigation.html %}
+{% include sheets.html %}

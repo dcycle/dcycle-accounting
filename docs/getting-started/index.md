@@ -85,7 +85,11 @@ There is still room for improvement, but the important thing to note here is tha
 
 #### Verification
 
-Unless you are an Excel ninja, you will make mistakes, and there is nothing like a nice green verification cell to reassure you that no mistakes are being made. If you are using the Google Sheets template, you can look any sheet which will have, at its very top, on row 2, a line which says 'Master verification, should always be zero, see "verification" sheet', and next to it a cell with the number zero (it should be zero!) which will be green (if its contents are not zero, the cell will be red). The master verification is the sum of all verifications in the "verifications" sheet, each should equal zero.
+Unless you are an Excel ninja, you will make mistakes, and there is nothing like a nice green verification cell to reassure you that no mistakes are being made. If you are using the Google Sheets template, you can look any sheet which will have, at its very top, on row 3, a line which says 'Master verification, should always be zero, see "verification" sheet', and next to it a cell with the number zero (it should be zero!) which will be green (if its contents are not zero, the cell will be red). The master verification is the sum of all verifications in the "verifications" sheet, each should equal zero. You can add as many verifications across your entire spreadsheet, to be immediately notified in case of a problem.
+
+#### Notes
+
+Add lots of comments as notes to your cells. To see an example of a note, see cell A6 of the [starterkit spreadsheet](https://docs.google.com/spreadsheets/d/1I-1wbAjrl1D0MHb6M_E54xVeqQ6x9ty_XTxHQbUWGwg/edit#gid=1971486291). Notes will help your future self, or colleagues, understand something which is not immediately obvious. Cells with notes have a tiny triangle in their corner which can easily be missed; it is therefore recommended to add "(see note)" to the cell description where possible.
 
 ### Some function we'll often use
 
@@ -229,10 +233,12 @@ Consider this example with `VLOOKUP()`, where our "SHEET1!$A$1:$B2" range is nam
 
 The above example is a typical bank spreadsheet export. Because VLOOKUP does not allow for two criteria, you will need to combine DESC and DESC2 into an intermediate column, and then VLOOKUP that in your mapping.
 
-Columns, but also whole sheets (tabs) in your spreadsheet can exist solely as intermediate data. Whether columns or sheets, Dcycle Accounting recommends you name your intermediate data clearly (we try to use prepend our intermediate columns and sheets with "-int").
+Columns, but also whole sheets (tabs) in your spreadsheet can exist solely as intermediate data. Whether columns or sheets, Dcycle Accounting recommends you name your intermediate data clearly (we try to use prepend our intermediate columns and sheets with "int", for example "intJournal").
 
 ### Spreadsheet scripting
 
 Once in a while, it can be useful to define your own function which you can do using the Script Editor of Google Sheets (`Tools > Script editor`), if you have some coding skills or know someone who does. This should be avoided if possible in favour of the functions we defined above, because scripts are inherently harder to understand, maintain, and export than spreadsheet built-in functions. Furthermore, at the time of this writing and following some tests of my own, Google Sheets can get slow and buggy if there is a large number of scripts, especially if they're in several files. I had initial defined a number of useful scripts, but moved away from them in favour of intermediate cells and sheets (see "Intermediate data", above).
+
+If you _do use scripts_, I would suggest making them optional. They make your life easier, but if they're not there, then your spreadsheet works nonetheless.
 
 {% include navigation.html %}

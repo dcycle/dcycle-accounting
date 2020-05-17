@@ -4,7 +4,7 @@
   {% if page.id == section.id %}
     <li class="{{ section.id }}">This page: {{ section.name }}</li>
   {% else %}
-    <li class="{{ section.id }}"><a href="{{ section.path }}">{{ section.name }}</a></li>
+    <li{% if section.id %} class="{{ section.id }}"{% endif %}{% if section.external %} target="_blank"{% endif %}><a href="{{ section.path }}">{{ section.name }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>

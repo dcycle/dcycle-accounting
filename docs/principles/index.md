@@ -20,19 +20,19 @@ The tools are simple, their usage can be complex, but well thought out.
 
 ### Spreadsheets are first-class citizens
 
-For all their shortcomings, spreadsheets are so widespread that I have decided to base everything I do on spreadsheets. That will reduce the learning curve for new users of this system.
+For all their shortcomings, spreadsheets are so widespread that I have decided to base everything I do on spreadsheets, with no custom scripting. That will reduce the learning curve for new users of this system.
 
 **Dcycle Accounting examples have been tested with Google Sheets, so if you use a different product, your results may differ.**
 
 ### Open source
 
-This project is 100% open-source and can be freely used and adapted by anyone.
+This project is 100% open-source and can be freely used and adapted by anyone. The source code of this website can be found on [GitHub](https://github.com/dcycle/dcycle-accounting).
 
 ### No database, your spreadsheets are your data
 
 Many accounting systems put your data in black-box databases, and allow you to import data into, and export data from, them.
 
-Dcycle Accounting has no database: your spreadsheets are your data.
+Dcycle Accounting has no database: your spreadsheets are your data. This prevents vendor lock-in.
 
 ### Double-entry accounting
 
