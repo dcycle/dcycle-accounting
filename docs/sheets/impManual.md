@@ -2,8 +2,5 @@
 id: impManual
 ---
 
-{% include sheets.html %}
-
-### The "impManual" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

@@ -2,8 +2,5 @@
 id: instructions
 ---
 
-{% include sheets.html %}
-
-### The "instructions" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

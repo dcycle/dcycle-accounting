@@ -2,8 +2,5 @@
 id: intJournal
 ---
 
-{% include sheets.html %}
-
-### The "intJournal" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

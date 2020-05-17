@@ -2,8 +2,5 @@
 id: forex
 ---
 
-{% include sheets.html %}
-
-### The "forex" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

@@ -2,8 +2,5 @@
 id: log
 ---
 
-{% include sheets.html %}
-
-### The "log" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

@@ -2,8 +2,5 @@
 id: sandbox
 ---
 
-{% include sheets.html %}
-
-### The "sandbox" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

@@ -1,7 +1,7 @@
 ---
 id: chart
 ---
-{% include sheets.html %}
+{% include sheets_header.html %}
 
 ### The "chart" sheet
 
@@ -55,4 +55,4 @@ Your income accounts **represent the world outside your organization**: to balan
 
 The great accounting software Ledger CLI [has some documentation with a more detailed explanation](https://www.ledger-cli.org/3.0/doc/ledger3.html#index-why-is-income-negative).
 
-{% include sheets.html %}
+{% include sheets_footer.html %}

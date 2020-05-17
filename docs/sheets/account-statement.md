@@ -2,8 +2,5 @@
 id: account-statement
 ---
 
-{% include sheets.html %}
-
-### The "account-statement" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

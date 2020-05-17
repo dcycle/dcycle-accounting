@@ -2,8 +2,5 @@
 id: impMyBank
 ---
 
-{% include sheets.html %}
-
-### The "impMyBank" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}

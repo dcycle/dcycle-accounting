@@ -2,8 +2,5 @@
 id: verification
 ---
 
-{% include sheets.html %}
-
-### The "verification" sheet
-
+{% include sheets_header.html %}
 {% include sheets.html %}
