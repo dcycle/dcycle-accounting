@@ -55,7 +55,7 @@ These are verfication cells which should be zero. If they are zero, they are dis
 
 <table>
   <tr>
-    <td class="cell-green">Red cells</td>
+    <td class="cell-red">Red cells</td>
   </tr>
 </table>
 
@@ -98,7 +98,7 @@ These normally exist only on the summary tab and allow users select dates and a 
 
 <table>
   <tr>
-    <td class="cell-cyan">Yellow cells</td>
+    <td class="cell-yellow">Yellow cells</td>
   </tr>
 </table>
 
