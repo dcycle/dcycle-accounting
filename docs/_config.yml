@@ -26,6 +26,12 @@ sections:
     name: Get support on the GitHub issue queue
     path: https://github.com/dcycle/dcycle-accounting/issues
 sheets:
+  - id: sandbox
+    description: Has no incidence on your reporting, can be used to test ideas, functions.
+  - id: verification
+    description: Consolidations verification inforation from all other sheets, and makes a master verification cell available to all sheets. If it is zero, checks pass; if it is not zero, there are errors.
+  - id: forex
+    description: Define your available currencies, and import daily rates.
   - id: chart
     description: The chart of accounts and how much money is in each account. A good overview of your assets, liabilities, expenses and income.
   - id: log
@@ -48,9 +54,3 @@ sheets:
     description: View operations related to a single account in the desired period, in the desired currency.
   - id: summary
     description: Running balance sheet, and any other high-level reporting, for the desired period. This sheet also lets you select a period and currency for all your reporting.
-  - id: forex
-    description: Define your available currencies, and import daily rates.
-  - id: sandbox
-    description: Has no incidence on your reporting, can be used to test ideas, functions.
-  - id: verification
-    description: Consolidations verification inforation from all other sheets, and makes a master verification cell available to all sheets. If it is zero, checks pass; if it is not zero, there are errors.
