@@ -20,37 +20,45 @@ sections:
     name: Fork or edit me on Github
     path: https://github.com/dcycle/dcycle-accounting/tree/master
   - external: true
-    name: Example on Google sheets
+    name: Google sheets starterkit
     path: https://docs.google.com/spreadsheets/d/1I-1wbAjrl1D0MHb6M_E54xVeqQ6x9ty_XTxHQbUWGwg/edit?usp=sharing
   - external: true
     name: Get support on the GitHub issue queue
     path: https://github.com/dcycle/dcycle-accounting/issues
 sheets:
+  - id: instructions
+    description: Any instructions such as what to do monthly, which source to import exchange rates from, etc., can go here.
   - id: sandbox
     description: Has no incidence on your reporting, can be used to test ideas, functions.
+  - id: variables
+    description: Global variables related to the document such as your base currency.
   - id: verification
     description: Consolidations verification inforation from all other sheets, and makes a master verification cell available to all sheets. If it is zero, checks pass; if it is not zero, there are errors.
-  - id: forex
-    description: Define your available currencies, and import daily rates.
   - id: chart
     description: The chart of accounts and how much money is in each account. A good overview of your assets, liabilities, expenses and income.
-  - id: log
-    description: Supports the good practice of logging important work done on the document, for example monthly importing of data from your bank.
-  - id: instructions
-    description: Provides instructions on how to use the document.s
-  - id: impMyBank
-    description: Most organizations will import data from various sources; this is an example import short.
   - id: journal
     description: The journal of operations which is generated automatically from the imported data (sheets starting with "imp") via the intermediate sheet intJournal. Do not modify this directly.
-  - id: impManual
-    description: Enter journal entries manually here. Most organizations will have few manual entries; these are entries which are generated automatically from other sources such as impMyBank.
-  - id: intJournal
-    description: An intermediate sheet which colladates data from "imp" sheets and prepares them for the automated journal.
-  - id: invoice
-    description: Display and print invoices.
-  - id: variables
-    description: Global variables related to the document such as your base currency and company name.
-  - id: account-statement
-    description: View operations related to a single account in the desired period, in the desired currency.
   - id: summary
     description: Running balance sheet, and any other high-level reporting, for the desired period. This sheet also lets you select a period and currency for all your reporting.
+  - id: acctStatement
+    description: View operations related to a single account in the desired period, in the desired currency.
+  - id: log
+    description: Supports the good practice of logging important work done on the document, for example monthly importing of data from your bank.
+  - id: partners
+    description: All your partners.
+  - id: ACMEBANK
+    description: Most organizations will import data from various sources; this is an example import short.
+  - id: PAYMENTS
+    description: Example data import sheet allowing you to enter payments.
+  - id: MANUAL
+    description: For "exceptional" operations which do not fall into any of your data entry sheets.
+  - id: LINE
+    description: For "exceptional" operations which do not fall into any of your data entry sheets.
+  - id: INVOICES
+    description: Display and print invoices.
+  - id: Invoice
+    description: View and print an invoice.
+  - id: intJournal
+    description: An intermediate sheet which colladates data from "imp" sheets and prepares them for the automated journal.
+  - id: forex
+    description: Define your available currencies, and import daily rates.

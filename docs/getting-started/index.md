@@ -241,4 +241,28 @@ Once in a while, it can be useful to define your own function which you can do u
 
 If you _do use scripts_, I would suggest making them optional. They make your life easier, but if they're not there, then your spreadsheet works nonetheless.
 
+### Explicit column numbers
+
+Throughout the document, as in the "partners" tab for example, you will notice a row with sequential numbers (1, 2, 3...) If you add a row here, you will need to make sure the numbers remain sequential. This is because we make extensive use of the VOOKUP function get information such as:
+
+    =VLOOKUP("ACMEBAKERY", partners!$A$8:$H, 3, FALSE)
+
+The above should return the value associated with "ACMEBAKERY" in the partners tab, at the third column (the "Language" column): "en".
+
+Most spreadsheet functions will auto-adjust if you move things around. For example, if for some reason you add two rows before row 8 (so that the old row 8 is now row 10) in the "partners" tab, any instance of the above function will auto-update to:
+
+    =VLOOKUP("ACMEBAKERY", partners!$A$10:$H, 3, FALSE)
+
+However there is a limitation to the VLOOKUP function such that, if you add a column, say, before "Name", **the column number in your function (3), will not auto-update to 4 as it should**, meaning that now, the above function will return the "Name" column (because now _it_ is the third column), which in almost no case is the desired behaviour.
+
+My solution is to have a row with all the column numbers near the header of the VLOOKUP table, sor for example in partners we have a row with 1, 2, 3, 4... To get our "Language", then, we will use:
+
+    =VLOOKUP("ACMEBAKERY", partners!$A$8:$H, partners!$C$6, FALSE)
+
+And now, if we add a column before "name" **and update all the column numbers so that they remain sequential (1, 2, 3, 4... instead of 1, "", 2, 3...)**, our VLOOKUP function will auto-update to:
+
+    =VLOOKUP("ACMEBAKERY", partners!$A$8:$H, partners!$C$7, FALSE)
+
+And because our cell "partners!$C$7" should now contain the number 4 (because we updated it), the function should still return the language.
+
 {% include navigation.html %}

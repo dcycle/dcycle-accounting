@@ -26,7 +26,8 @@ If you look at any sheet, you will see a header that looks like this:
     <td>Global verification: should always be zero</td>
   </tr>
   <tr>
-    <td colspan="2">General description of this sheet with optional notes</td>
+    <td>sheetName</td>
+    <td>General description of this sheet with optional notes</td>
   </tr>
   <tr>
     <td colspan="2" class="cell-black">Section 1</td>
@@ -88,6 +89,8 @@ These are single verifications which often show up at the very last column of a 
 
 These are interchangeable; we have two colours here so we can distinguish different _sections_ of our sheets. These are intermediate calculations which are done automatically by the spreadsheet.
 
+The blue columns are normally to the right of all your other columns, and if you need to you can copy-paste more rows.
+
 <table>
   <tr>
     <td class="cell-cyan">Cyan cells</td>
@@ -103,5 +106,37 @@ These normally exist only on the summary tab and allow users select dates and a 
 </table>
 
 Used to display warnings or bring a user's attention to something. For example, if you reporting a balance sheet in a currency other than your base, or home, currency, a warning is displayed on your balance sheet.
+
+<table>
+  <tr>
+    <td class="cell-black">Black cells</td>
+  </tr>
+</table>
+
+Black cells cover the width of the document and are used to separate sections within a sheet.
+
+<table>
+  <tr>
+    <td class="cell-purple">Purple cells</td>
+  </tr>
+</table>
+
+These contain data which has been entered manually, and they must always be accompanied by an explanation or ideally a link to a source document whence that number comes.
+
+<table>
+  <tr>
+    <td class="cell-dark-grey">Dark grey cells</td>
+  </tr>
+</table>
+
+These cells should never be changed, they are providing information coming a separate part of the document. They are often protected from editing.
+
+<table>
+  <tr>
+    <td class="cell-orange">Orange cells</td>
+  </tr>
+</table>
+
+Used to categorize imported or manually entered transactions. For example, if a payment received is categorized as a wire transfer, the accounts affected will be different than if the payment is categorized as cheque received. See the "PAYMENTS" tab for an example.
 
 {% include sheets.html %}

@@ -33,6 +33,11 @@ table, td {
 
 .cell-red {
   background: rgb(252, 13, 27);
+  color: white;
+}
+
+.cell-dark-grey {
+  background: rgb(153, 153, 153);
 }
 
 .cell-light-blue {
@@ -43,8 +48,16 @@ table, td {
   background: rgb(165, 195, 242);
 }
 
-.white {
+.cell-orange {
+  background: rgb(251, 229, 206);
+}
+
+.cell-white {
   background: white;
+}
+
+.cell-purple {
+  background: rgb(217, 210, 232);
 }
 
 .cell-black {
