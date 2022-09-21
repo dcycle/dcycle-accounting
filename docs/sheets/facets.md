@@ -20,4 +20,6 @@ In the [Google Sheets starterkit charts sheet, to the right](https://docs.google
 * "Summary name", where each account in the chart of accounts is categorized by where it is categorized in [the summary](https://docs.google.com/spreadsheets/d/1I-1wbAjrl1D0MHb6M_E54xVeqQ6x9ty_XTxHQbUWGwg/edit#gid=327236141): Cash on hand, accounts payable, etc.
 * "Summary category", where each account in the chart of accounts is categorized by "Assets", "Liabilities", "Revenue", or "Expenses".
 
+Categorizing accounts by a variety of facets allows us to create account statements in the acctStatement tab by any number of facets, and categories within those facets.
+
 {% include sheets.html %}
