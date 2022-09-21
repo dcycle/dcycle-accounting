@@ -133,10 +133,29 @@ These cells should never be changed, they are providing information coming a sep
 
 <table>
   <tr>
-    <td class="cell-orange">Orange cells</td>
+    <td class="cell-light-orange">Light orange cells</td>
   </tr>
 </table>
 
 Used to categorize imported or manually entered transactions. For example, if a payment received is categorized as a wire transfer, the accounts affected will be different than if the payment is categorized as cheque received. See the "PAYMENTS" tab for an example.
+
+<table>
+  <tr>
+    <td class="cell-dark-orange">Dark orange cells</td>
+  </tr>
+</table>
+
+Used to categorize chart items by facet. For example, you might have several places where you store money:
+
+* ACME bank account might be in USD
+* Prepaid credit card 1 might be in USD
+* Prepaid credit card 2 might be in CAD
+* ABC bank account might be in CAD
+
+Facets are our way of grouping together accounts. For example you might define a facet "account type" which would have values "bank account" (ACME and ABC) vs "prepaid credit card" (Prepaid credit card 1 and Prepaid credit card 2).
+
+Another facet might be "currency" which would have values "USD" (ACME and Prepaid credit card 1) vs "CAD" (ABC and Prepaid credit card 2).
+
+[More about facets here](/sheets/facets.html).
 
 {% include sheets.html %}

@@ -3,8 +3,6 @@ id: home
 ---
 <!-- The site title shows up automatically when hosted on GitHub pages -->
 
-**VERSION UNDER DEVELOPMENT, NOT YET READY FOR USE**
-
 Whom is this project for?
 -----
 

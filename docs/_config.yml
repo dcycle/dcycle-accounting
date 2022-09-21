@@ -36,6 +36,8 @@ sheets:
     description: Consolidations verification inforation from all other sheets, and makes a master verification cell available to all sheets. If it is zero, checks pass; if it is not zero, there are errors.
   - id: chart
     description: The chart of accounts and how much money is in each account. A good overview of your assets, liabilities, expenses and income.
+  - id: facets
+    description: Allows grouping of accounts in the chart of accounts.
   - id: journal
     description: The journal of operations which is generated automatically from the imported data (sheets starting with "imp") via the intermediate sheet intJournal. Do not modify this directly.
   - id: summary
